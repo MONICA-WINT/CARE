@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartant:ital,wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartant', 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+body {
+    width: 100%;
+}
+/* CSS for Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.logo img {
+    max-width: 145px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* CSS for Header Section */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-md-6 img {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.col-md-6 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-md-6 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #16a7b4;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: background 0.3s;
+}
+
+.col-md-6 a:hover {
+    background: #106e77;
+}
+
+p {
+    color: #555;
+}
+
+.header-section {
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+    background: radial-gradient(#fff, #eaf2fb);
+}
+
+
+/* Style de la section catégorie */
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #444;
+    margin: 50px 0;
+}
+.col-md-4 img{
+    border-radius: 20px;
+
+
+}
+
+/* Section des meilleurs produits */
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.5s; /* Ajout de la transition */
+}
+
+.col-4 img {
+    width: 100%;
+    transition: transform 0.5s; /* Ajout de la transition */
+}
+
+.col-4:hover img {
+    transform: scale(1.1); /* Ajout de l'animation de survol */
+}
+
+.rating .fa-solid {
+    color: #16a7b4;
+}
+
+.rating .fa-regular {
+    color: #16a7b4;
+}
+
+/* Section Héros */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.hero-section .hero-content {
+    max-width: 500px;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-content .btn {
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-section .hero-image img {
+    width: 100%;
+}
+
+/* Produits en vedette */
+
+/* Section des meilleurs produits */
+/* Section des meilleurs produits */
+.featured-products {
+    padding: 20px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-products .col-md-3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-products .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rating i {
+    color: #f8ce0b; /* couleur des étoiles */
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.featured-products p {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/* Section Offre */
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin: 50px 0;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.offer .row {
+    display: flex;
+    align-items: center;
+}
+
+.offer .col-2 {
+    flex: 1;
+}
+
+.offer .offer-img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.offer .offer-img:hover {
+    transform: scale(1.1);
+}
+
+.offer h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.offer p {
+    margin-bottom: 20px;
+}
+
+.offer .btn {
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Avis clients */
+
+/* Avis clients */
+.client-review {
+    margin: 50px 0;
+}
+
+.client-review .row {
+    display: flex;
+    gap: 15px;
+}
+
+.client-review .col-3 {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.client-review .col-3 img {
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+
+/* Marques */
+.brands {
+    margin: 50px 0;
+}
+
+.brands .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.brands .col-5 {
+    flex: 1 1 calc(20% - 15px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.brands .col-5 img {
+    max-width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .footer-col-1, 
+footer .footer-col-2, 
+footer .footer-col-3, 
+footer .footer-col-4 {
+    flex: 1 1 calc(25% - 15px);
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .app-logo img {
+    width: 140px;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+/* Section des derniers produits */
+
+.col-md-3 {
+    transition: transform 0.5s; /* Ajout de la transition */
+}
+
+.col-md-3 img {
+    width: 100%;
+    transition: transform 0.5s; /* Ajout de la transition */
+    border-radius: 20px;
+
+}
+
+.col-md-3:hover img {
+    transform: scale(1.1); /* Ajout de l'animation de survol */
+}
+
+/* single product */
+#prodetails {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#prodetails .single-pro-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin below each small image column */
+}
+
+#prodetails .single-pro-details {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    background: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-section {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-link {
+    color: #333;
+    padding: 10px;
+}
+
+#contact-details {
+    margin-top: 120px;
+}
+
+#contact-details h2 {
+    margin-bottom: 30px;
+}
+
+#contact-details h3 {
+    margin-bottom: 20px;
+}
+
+#contact-details ul li {
+    margin-bottom: 15px;
+}
+
+#contact-details ul li i {
+    font-size: 20px;
+    color: #007bff;
+}
+
+#form-details {
+    margin-top: 50px;
+}
+
+#form-details form h2 {
+    margin-bottom: 30px;
+}
+
+#form-details .form-control {
+    margin-bottom: 20px;
+}
+
+.people .user {
+    display: flex;
+    align-items: center;
+}
+
+.people .user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#newsletter {
+    background: #041e42;
+    color: white;
+    padding: 40px 20px;
+}
+
+#newsletter h4 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#newsletter p span {
+    color: #ffc107;
+}
+
+#newsletter .form {
+    display: flex;
+}
+
+#newsletter .form input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#newsletter .form button {
+    flex-shrink: 0;
+}
+
+
+/* About Us Page CSS */
+#about-us {
+    padding: 60px 0;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#our-team {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#our-team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+}
+
+#our-mission {
+    padding: 60px 0;
+}
+
+#our-mission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    #our-mission p {
+    font-size: 16px;
+    line-height: 1.6;
+    }
+    
+    #testimonials {
+    padding: 60px 0;
+    text-align: center;
+    }
+    
+    #testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    }
+    
+    .testimonial {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    }
+    
+    .testimonial p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+    }
+    
+    .testimonial h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+    }
+    
+   
+    

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vobla shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Logo du site">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul id="nav-links" class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                            <li class="nav-item"><a class="nav-link" href="produits.html">Autos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Apropos.html">Über uns</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </section>
+
+<section id="prodetails" class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="single-pro-image">
+                <img src="images/H/H1.jpg" class="img-fluid mb-4" id="MainImg" alt="Product Image">
+                <div class="small-img-group d-flex justify-content-between">
+                    <div class="small-img-col">
+                        <img src="images/H/H2.jpg" class="img-fluid small-img" alt="Small Image 1" onclick="changeImage(this)">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/H/H3.jpg" class="img-fluid small-img" alt="Small Image 2" onclick="changeImage(this)">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/H/H4.jpg" class="img-fluid small-img" alt="Small Image 3" onclick="changeImage(this)">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/H/H1.jpg" class="img-fluid small-img" alt="Small Image 4" onclick="changeImage(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="single-pro-details">
+                <h6><a href="#">Mercedes-GLC</a></h6>
+                <h2>9.500 €</h2>
+                <button class="btn btn-primary">Add to Cart</button>
+                <h4>Product Details</h4>
+                <p>
+                    Marke und Modell: Mercedes-Benz GLC 250 4Matic<br>
+                    Baujahr: 2017<br>
+                    Kilometerstand: 110.000 km<br>
+                    Motorart: Benzin<br>
+                    Getriebe: Automatik<br>
+                    Außenfarbe: Grau<br>
+                    <a href="mailto:gebrauchtwagen94@gmail.com">Kontaktieren Sie den Verkäufer für weitere Details</a>              
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Nos derniers produits-->
+<section class="featured-products">
+    <div class="container">
+        <h2>Unsere neuesten Produkte</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <a href="sproduitE.html">
+                <img src="images/E/E1.jpg" alt="produit 5" class="img-fluid">
+                 </a>
+                <h3>BMW 420</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="text-muted"><s>16.500 €</s></p>
+                <p class="text-danger font-weight-bold">11.500 €</p>
+                <a href="mailto:gebrauchtwagen94@gmail.com" class="btn btn-primary mt-2">Verkäufer kontaktieren</a>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <a href="sproduitF.html">
+                <img src="images/F/F1.jpg" alt="produit 6" class="img-fluid">
+                </a>
+                <h3>Mercedes-Benz c</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="text-muted"><s>14.500 €</s></p>
+                <p class="text-danger font-weight-bold">10.500 €</p>
+                <a href="mailto:gebrauchtwagen94@gmail.com" class="btn btn-primary mt-2">Verkäufer kontaktieren</a>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <a href="sproduitI.html">
+                <img src="images/I/I1.jpg" alt="produit 7" class="img-fluid">
+                </a>
+                <h3>DS3 CROSSBACK</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="text-muted"><s>30.000€</s></p>
+                <p class="text-danger font-weight-bold">21.500 €</p>
+                <a href="mailto:gebrauchtwagen94@gmail.com" class="btn btn-primary mt-2">Verkäufer kontaktieren</a>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <a href="sproduitH.html">
+                <img src="images/H/H1.jpg" alt="produit 8" class="img-fluid">
+               </a>
+                <h3>Mercedes-GLC </h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="text-muted"><s>13.000 €</s></p>
+                <p class="text-danger font-weight-bold">9.500 €</p>
+                <a href="mailto:gebrauchtwagen94@gmail.com" class="btn btn-primary mt-2">Verkäufer kontaktieren</a>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Marques -->
+  <section class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-2 col-5">
+                <img src="images/logo-coca-cola.png" alt="Coca Cola" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 col-5">
+                <img src="images/logo-oppo.png" alt="Oppo" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 col-5">
+                <img src="images/logo-paypal.png" alt="Paypal" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 col-5">
+                <img src="images/logo-philips.png" alt="Philips" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2 col-5">
+                <img src="images/logo-redbull.png" alt="Red Bull" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Laden Sie unsere App herunter</h3>
+                    <p>Laden Sie unsere App für Android und iOS herunter.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store" class="img-fluid">
+                        <img src="images/app-store.png" alt="App Store" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/logo.png" alt="Logo" class="img-fluid">
+                    <p>Unser Ziel ist es, qualitativ hochwertige Autos für alle zugänglich zu machen.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Nützliche Links</h3>
+                    <ul class="list-unstyled">
+                        <li>Gutscheine</li>
+                        <li>Blog</li>
+                        <li>Rückgabe</li>
+                        <li>Werden Sie unser Affiliate</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Folgen Sie uns</h3>
+                    <ul class="list-unstyled">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+            <hr>
+            <p class="text-center">Urheberrecht 2024 - Ihre Auto-Website
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var MainImg=document.getElementById("MainImg");
+        var smallimg=document.getElementsByClassName('small-img');
+        smallimg[0].onclick  = function(){
+         MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick  = function(){
+         MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick  = function(){
+         MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick  = function(){
+         MainImg.src = smallimg[3].src;
+        }
+     </script>
+</body>
+
+</html>
